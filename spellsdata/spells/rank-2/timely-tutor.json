@@ -1,0 +1,53 @@
+{
+    "_id": "OhgfPzB5gymZ0IZM",
+    "folder": "lPzcDrjGDFbzuF2r",
+    "img": "icons/sundries/scrolls/scroll-magical-yellow.webp",
+    "name": "Timely Tutor",
+    "system": {
+        "area": null,
+        "cost": {
+            "value": ""
+        },
+        "counteraction": false,
+        "damage": {},
+        "defense": null,
+        "description": {
+            "value": "<p>You serve as an astral connection between your eidolon or familiar and the Akashic Record—a demiplane consisting of a comprehensive psychic library. If you Cast this Spell on your familiar, your familiar adds your spellcasting attribute modifier on checks to @UUID[Compendium.pf2e.actionspf2e.Item.Recall Knowledge] with the Lore skill of your choice, much like they do for Acrobatics and Stealth. Your familiar must have the speech familiar ability in order to share any information they learn with you. If you Cast this Spell on your eidolon, they instead become trained in the Lore skill of your choice.</p>\n<p>If you lose physical contact with the target, their connection to the Akashic Record is severed, and the spell immediately ends.</p>"
+        },
+        "duration": {
+            "sustained": true,
+            "value": "1 minute"
+        },
+        "level": {
+            "value": 2
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Impossible Magic"
+        },
+        "range": {
+            "value": "touch"
+        },
+        "requirements": "",
+        "rules": [],
+        "target": {
+            "value": "your eidolon or familiar"
+        },
+        "time": {
+            "value": "1"
+        },
+        "traits": {
+            "rarity": "common",
+            "traditions": [
+                "arcane",
+                "occult"
+            ],
+            "value": [
+                "manipulate",
+                "mental"
+            ]
+        }
+    },
+    "type": "spell"
+}

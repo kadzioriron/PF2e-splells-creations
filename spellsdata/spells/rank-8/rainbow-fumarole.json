@@ -1,0 +1,64 @@
+{
+    "_id": "0AZOIMRvZtePuGOw",
+    "folder": "IfuYSF4ymX48CZnm",
+    "img": "systems/pf2e/icons/spells/rainbow-fumarole.webp",
+    "name": "Rainbow Fumarole",
+    "system": {
+        "area": {
+            "type": "cylinder",
+            "value": 20
+        },
+        "cost": {
+            "value": ""
+        },
+        "counteraction": false,
+        "damage": {},
+        "defense": {
+            "save": {
+                "basic": true,
+                "statistic": "reflex"
+            }
+        },
+        "description": {
+            "value": "<p><strong>Area</strong> 20-foot radius, 60-foot-tall cylinder</p><hr /><p>Multi-hued flames break through cracks in the ground, reaching high into the sky and giving off dangerous fumes. When you cast the spell, roll 1d8 on the table below to determine the effects of the fumarole.</p>\n<p>Any creature caught inside the area of <em>rainbow fumarole</em> when you cast it takes the indicated damage with a basic Reflex save and, on a failure, takes any added effect listed. Creatures must also attempt a saving throw when they move through the spell's area or end their turn in it. Squares within the area of the <em>rainbow fumarole</em> are difficult terrain.</p><table class=\"pf2e\"><thead><tr><th><p>[[/r 1d8]]{d8}</p></th><th><p>Color</p></th><th><p>Damage</p></th><th><p>Added Effect</p></th></tr></thead><tbody><tr><td><p>1</p></td><td><p>Red</p></td><td><p>@Damage[50[fire],2d6[persistent,fire]|options:area-damage]{50 fire plus 2d6 persistent fire}</p></td><td><p>—</p></td></tr><tr><td><p>2</p></td><td><p>Orange</p></td><td><p>@Damage[50[fire]|options:area-damage]</p></td><td><p>Knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone]</p></td></tr><tr><td><p>3</p></td><td><p>Yellow</p></td><td><p>@Damage[30[fire],20[bludgeoning]|options:area-damage]{30 fire plus 20 bludgeoning}</p></td><td><p>Pushed 10 feet</p></td></tr><tr><td><p>4</p></td><td><p>Green</p></td><td><p>@Damage[20[fire],20[acid]|options:area-damage]{20 fire plus 20 acid}</p></td><td><p>@UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}</p></td></tr><tr><td><p>5</p></td><td><p>Blue</p></td><td><p>@Damage[30[fire]|options:area-damage]</p></td><td><p>@UUID[Compendium.pf2e.conditionitems.Item.Paralyzed] for 1 round</p></td></tr><tr><td><p>6</p></td><td><p>Indigo</p></td><td><p>@Damage[30[fire]|options:area-damage]</p></td><td><p>@UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 minute</p></td></tr><tr><td><p>7</p></td><td><p>Violet</p></td><td><p>@Damage[30[fire]|options:area-damage]</p></td><td><p>@UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 minute</p></td></tr><tr><td><p>8</p></td><td><p>All</p></td><td><p>Choose the color for each affected creature and use that color's damage and added effect; if a creature is affected again, you can choose a different color.</p></td><td><p>—</p></td></tr></tbody></table>"
+        },
+        "duration": {
+            "sustained": false,
+            "value": "1 minute"
+        },
+        "level": {
+            "value": 8
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": true,
+            "title": "Pathfinder Rage of Elements"
+        },
+        "range": {
+            "value": "500 feet"
+        },
+        "requirements": "",
+        "rules": [],
+        "target": {
+            "value": ""
+        },
+        "time": {
+            "value": "3"
+        },
+        "traits": {
+            "rarity": "common",
+            "traditions": [
+                "arcane",
+                "primal"
+            ],
+            "value": [
+                "concentrate",
+                "fire",
+                "incapacitation",
+                "light",
+                "manipulate"
+            ]
+        }
+    },
+    "type": "spell"
+}

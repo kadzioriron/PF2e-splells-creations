@@ -1,0 +1,73 @@
+{
+    "_id": "sUr5KCpeE6AXfvPp",
+    "folder": "wnvibtD90h7CStDC",
+    "img": "systems/pf2e/icons/spells/imaginary-weapon.webp",
+    "name": "Imaginary Weapon",
+    "system": {
+        "area": null,
+        "cost": {
+            "value": ""
+        },
+        "counteraction": false,
+        "damage": {
+            "ky50hzqhwvdu8luq": {
+                "applyMod": false,
+                "category": null,
+                "formula": "2d6",
+                "kinds": [
+                    "damage"
+                ],
+                "materials": [],
+                "type": "force"
+            }
+        },
+        "defense": null,
+        "description": {
+            "value": "<p>You create a simple weapon of force and lash out, its arc following your hand. Make a melee spell attack roll against your target's AC. If you hit, you deal 2d6 force damage. On a critical success, you deal double damage and can choose to detonate your weapon to push the target 10 feet away from you.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>"
+        },
+        "duration": {
+            "sustained": false,
+            "value": ""
+        },
+        "heightening": {
+            "damage": {
+                "ky50hzqhwvdu8luq": "1d6"
+            },
+            "interval": 1,
+            "type": "interval"
+        },
+        "level": {
+            "value": 1
+        },
+        "overlays": {},
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Dark Archive (Remastered)"
+        },
+        "range": {
+            "value": "touch"
+        },
+        "requirements": "",
+        "rules": [],
+        "target": {
+            "value": "1 creature"
+        },
+        "time": {
+            "value": "2"
+        },
+        "traits": {
+            "rarity": "uncommon",
+            "traditions": [],
+            "value": [
+                "attack",
+                "cantrip",
+                "concentrate",
+                "force",
+                "manipulate",
+                "psychic"
+            ]
+        }
+    },
+    "type": "spell"
+}

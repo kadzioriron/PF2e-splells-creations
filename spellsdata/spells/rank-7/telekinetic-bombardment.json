@@ -1,0 +1,110 @@
+{
+    "_id": "uc4I1diSSX6XYzb3",
+    "folder": "xqlqJ6eeiNtWb7bq",
+    "img": "icons/skills/trades/construction-mason-stonecutter-sculpture.webp",
+    "name": "Telekinetic Bombardment",
+    "system": {
+        "area": {
+            "type": "burst",
+            "value": 10
+        },
+        "cost": {
+            "value": ""
+        },
+        "counteraction": false,
+        "damage": {
+            "zssli0njmyjito8c": {
+                "applyMod": false,
+                "category": null,
+                "formula": "14d6",
+                "kinds": [
+                    "damage"
+                ],
+                "materials": [],
+                "type": "bludgeoning"
+            }
+        },
+        "defense": {
+            "save": {
+                "basic": false,
+                "statistic": "reflex"
+            }
+        },
+        "description": {
+            "value": "<p>You grasp a piece of the landscape—such as a tree, carriage, or piece of masonry—and lob it in your foe's direction. Your missile crashes down in either a @Template[type:burst|distance:10] (for most missiles) or a @Template[type:line|distance:30] (for something long and tall, like a tree or a ship's mast), dealing @Damage[14d6[bludgeoning]|options:area-damage] damage and turning its area into difficult terrain as it breaks into rubble. All creatures in the area must attempt a Reflex save. If the area is a line, it doesn't have to start from your square but can instead start anywhere in range, as long as the entire area remains within range.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is knocked prone, and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
+        },
+        "duration": {
+            "sustained": false,
+            "value": ""
+        },
+        "heightening": {
+            "area": 0,
+            "damage": {
+                "zssli0njmyjito8c": "2d6"
+            },
+            "interval": 1,
+            "type": "interval"
+        },
+        "level": {
+            "value": 7
+        },
+        "overlays": {
+            "y9tYfMAFOxWWvgBi": {
+                "name": "10-foot Burst",
+                "overlayType": "override",
+                "sort": 1,
+                "system": {
+                    "damage": {
+                        "zssli0njmyjito8c": {
+                            "category": null
+                        }
+                    }
+                }
+            },
+            "ys8q58qeRiAyeRzV": {
+                "name": "30-foot Line",
+                "overlayType": "override",
+                "sort": 2,
+                "system": {
+                    "area": {
+                        "type": "line",
+                        "value": 30
+                    },
+                    "damage": {
+                        "zssli0njmyjito8c": {
+                            "category": null
+                        }
+                    }
+                }
+            }
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Dark Archive (Remastered)"
+        },
+        "range": {
+            "value": "500 feet"
+        },
+        "requirements": "",
+        "rules": [],
+        "target": {
+            "value": ""
+        },
+        "time": {
+            "value": "2"
+        },
+        "traits": {
+            "rarity": "common",
+            "traditions": [
+                "arcane",
+                "occult"
+            ],
+            "value": [
+                "concentrate",
+                "manipulate"
+            ]
+        }
+    },
+    "type": "spell"
+}

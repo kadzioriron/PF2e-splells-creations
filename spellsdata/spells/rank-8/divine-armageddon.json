@@ -1,0 +1,94 @@
+{
+    "_id": "it4wx2mDIJDlZGqS",
+    "folder": "IfuYSF4ymX48CZnm",
+    "img": "icons/commodities/bones/skull-hollow-orange.webp",
+    "name": "Divine Armageddon",
+    "system": {
+        "area": {
+            "type": "burst",
+            "value": 60
+        },
+        "cost": {
+            "value": ""
+        },
+        "counteraction": false,
+        "damage": {
+            "ZJ1tMuALcbL5o5eB": {
+                "applyMod": false,
+                "category": null,
+                "formula": "10d6",
+                "kinds": [
+                    "damage"
+                ],
+                "materials": [],
+                "type": "void"
+            },
+            "dSdItqptFsPB3wyQ": {
+                "applyMod": false,
+                "category": null,
+                "formula": "10d6",
+                "kinds": [
+                    "damage"
+                ],
+                "materials": [],
+                "type": "spirit"
+            }
+        },
+        "defense": {
+            "save": {
+                "basic": true,
+                "statistic": "fortitude"
+            }
+        },
+        "description": {
+            "value": "<p>You call forth a divine cataclysm from your deity, destroying living and undead creatures in the area alike. Creatures in the area take 10d6 void damage and 10d6 spirit damage. A creature harmed by vitality damage, such as one with void healing, takes vitality damage instead of void damage from this spell.</p>\n<p>@Damage[(@item.level+2)d6[void],(@item.level+2)d6[spirit]|traits:spirit]{Leveled Void + Spirit Damage}</p>\n<p>@Damage[(@item.level+2)d6[vitality],(@item.level+2)d6[spirit]|traits:spirit]{Leveled Vitality + Spirit Damage}</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d6 void damage and 1d6 spirit damage.</p>"
+        },
+        "duration": {
+            "sustained": false,
+            "value": ""
+        },
+        "heightening": {
+            "area": 0,
+            "damage": {
+                "ZJ1tMuALcbL5o5eB": "1d6",
+                "dSdItqptFsPB3wyQ": "1d6"
+            },
+            "interval": 1,
+            "type": "interval"
+        },
+        "level": {
+            "value": 8
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Impossible Magic"
+        },
+        "range": {
+            "value": "120 feet"
+        },
+        "requirements": "You have a deity.",
+        "rules": [],
+        "target": {
+            "value": ""
+        },
+        "time": {
+            "value": "2"
+        },
+        "traits": {
+            "rarity": "common",
+            "traditions": [
+                "divine"
+            ],
+            "value": [
+                "concentrate",
+                "manipulate",
+                "sanctified",
+                "spirit",
+                "vitality",
+                "void"
+            ]
+        }
+    },
+    "type": "spell"
+}

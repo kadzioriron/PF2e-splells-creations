@@ -1,0 +1,4 @@
+ipykernel
+joblib
+pandas
+scikit-learn

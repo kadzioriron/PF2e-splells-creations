@@ -1,0 +1,53 @@
+{
+    "_id": "9TauMFkIsmvKJNzZ",
+    "folder": "4fJHnYFqH0VjZXPv",
+    "img": "icons/magic/symbols/triangle-glow-purple.webp",
+    "name": "Elemental Absorption",
+    "system": {
+        "area": null,
+        "cost": {
+            "value": ""
+        },
+        "counteraction": false,
+        "damage": {},
+        "defense": null,
+        "description": {
+            "value": "<p>You absorb elemental energy, which you can release as a powerful counterattack. Choose air, earth, fire, metal, water, or wood. You gain resistance 5 to damage dealt by effects with the chosen elemental trait; if you choose water, you also gain resistance 5 to cold damage. As usual, if a spell has multiple effects, such as a spell that deals both fire damage and bludgeoning damage with superheated rocks, you gain resistance to only the effects associated with the element you chose. Keep track of how much damage you've prevented with this spell.</p>\n<p>As a 2-action activity, which has the concentrate trait and the trait matching the element you chose, you can release the stored energy. This deals damage equal to the amount you've prevented (maximum 30) to one enemy within 60 feet, with a basic Reflex save. The damage type depends on the element you chose: bludgeoning or slashing damage for air; bludgeoning, piercing, or slashing damage for earth; fire damage for fire; electricity or slashing damage for metal; bludgeoning or cold damage for water; or bludgeoning or vitality damage for wood. After releasing the energy, the spell ends. If you don't use the stored energy before the spell ends, the energy is lost</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Elemental Absorption]</p><hr /><p><strong>Heightened (+3)</strong> The resistance increases by 5, and the maximum damage increases by 30.</p>"
+        },
+        "duration": {
+            "sustained": false,
+            "value": "1 minute"
+        },
+        "level": {
+            "value": 3
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Impossible Magic"
+        },
+        "range": {
+            "value": ""
+        },
+        "requirements": "",
+        "rules": [],
+        "target": {
+            "value": ""
+        },
+        "time": {
+            "value": "2"
+        },
+        "traits": {
+            "rarity": "common",
+            "traditions": [
+                "arcane",
+                "primal"
+            ],
+            "value": [
+                "concentrate",
+                "manipulate"
+            ]
+        }
+    },
+    "type": "spell"
+}

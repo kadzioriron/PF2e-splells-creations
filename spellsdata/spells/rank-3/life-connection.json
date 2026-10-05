@@ -1,0 +1,54 @@
+{
+    "_id": "HIY4XUJZKmFLAJTn",
+    "folder": "4fJHnYFqH0VjZXPv",
+    "img": "icons/magic/life/cross-yellow-green.webp",
+    "name": "Life Connection",
+    "system": {
+        "area": null,
+        "cost": {
+            "value": ""
+        },
+        "counteraction": false,
+        "damage": {},
+        "defense": null,
+        "description": {
+            "value": "<p>When you cast this spell, you place a failsafe deep within the life force of the target that could save them in a time of need. You can sense when the target takes damage, provided you're within 1 mile of one another. A creature can be part of no more than one <em>life connection</em> simultaneously. When the spell is cast, you gain the @UUID[Compendium.pf2e.actionspf2e.Item.Defend Life] reaction; once you use the reaction, the spell ends.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Life Connection]</p>"
+        },
+        "duration": {
+            "sustained": false,
+            "value": "24 hours"
+        },
+        "level": {
+            "value": 3
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Impossible Magic"
+        },
+        "range": {
+            "value": "touch"
+        },
+        "requirements": "",
+        "rules": [],
+        "target": {
+            "value": "1 living creature"
+        },
+        "time": {
+            "value": "10 minutes"
+        },
+        "traits": {
+            "rarity": "common",
+            "traditions": [
+                "divine",
+                "primal"
+            ],
+            "value": [
+                "concentrate",
+                "contingency",
+                "manipulate"
+            ]
+        }
+    },
+    "type": "spell"
+}
