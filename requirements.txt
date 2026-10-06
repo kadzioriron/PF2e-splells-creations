@@ -1,0 +1,5 @@
+ipykernel
+joblib
+numpy
+pandas
+torch
