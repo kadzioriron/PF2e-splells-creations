@@ -107,7 +107,8 @@ class SpellPredictor:
         self.network = MultiTaskNetwork(state["shared.0.weight"].shape[1], self.groups)
         self.network.load_state_dict(state)
         self.network.eval()
-        self.sentence_encoder = SentenceTransformer(EMBEDDING_MODEL)
+        # ZeroGPU makes torch.cuda look available; the models are small, so they always run on the CPU.
+        self.sentence_encoder = SentenceTransformer(EMBEDDING_MODEL, device="cpu")
 
     def _nb_lr(self, frame: pd.DataFrame) -> dict[str, np.ndarray]:
         encoder = self.nb_lr["encoder"]
