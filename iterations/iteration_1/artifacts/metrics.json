@@ -1,0 +1,12 @@
+{
+  "keywords": {
+    "micro_f1": 0.14639833287186135,
+    "macro_f1": 0.028961391358184027,
+    "subset_accuracy": 0.0
+  },
+  "traits": {
+    "micro_f1": 0.3878054247926474,
+    "macro_f1": 0.15591437754969906,
+    "subset_accuracy": 0.0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "full_input": {
+    "overall": 0.7859,
+    "traits": 0.8189,
+    "traditions": 0.7806,
+    "save": 0.8958,
+    "area": 0.8333,
+    "damage_types": 0.7132,
+    "sustained": 0.5946
+  },
+  "only_rank_and_description": {
+    "overall": 0.7198,
+    "traits": 0.7767,
+    "traditions": 0.6613,
+    "save": 0.8906,
+    "area": 0.8333,
+    "damage_types": 0.7244,
+    "sustained": 0.5556
+  }
+}

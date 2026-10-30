@@ -1,0 +1,78 @@
+{
+  "full_input": {
+    "2 \u2013 NB-LR": {
+      "overall": 0.7859,
+      "traits": 0.8189,
+      "traditions": 0.7806,
+      "save": 0.8958,
+      "area": 0.8333,
+      "damage_types": 0.7132,
+      "sustained": 0.5946
+    },
+    "3a \u2013 transformer + network": {
+      "overall": 0.7279,
+      "traits": 0.729,
+      "traditions": 0.7885,
+      "save": 0.7969,
+      "area": 0.8073,
+      "damage_types": 0.314,
+      "sustained": 0.3836
+    },
+    "3b \u2013 ensemble of 2 and 3a": {
+      "overall": 0.7869,
+      "traits": 0.8189,
+      "traditions": 0.7841,
+      "save": 0.8542,
+      "area": 0.8125,
+      "damage_types": 0.7132,
+      "sustained": 0.5946
+    }
+  },
+  "only_rank_and_description": {
+    "2 \u2013 NB-LR": {
+      "overall": 0.7198,
+      "traits": 0.7767,
+      "traditions": 0.6613,
+      "save": 0.8906,
+      "area": 0.8333,
+      "damage_types": 0.7244,
+      "sustained": 0.5556
+    },
+    "3a \u2013 transformer + network": {
+      "overall": 0.6413,
+      "traits": 0.6773,
+      "traditions": 0.6232,
+      "save": 0.7969,
+      "area": 0.8073,
+      "damage_types": 0.3519,
+      "sustained": 0.2687
+    },
+    "3b \u2013 ensemble of 2 and 3a": {
+      "overall": 0.7189,
+      "traits": 0.7767,
+      "traditions": 0.6667,
+      "save": 0.875,
+      "area": 0.8229,
+      "damage_types": 0.7244,
+      "sustained": 0.5556
+    }
+  },
+  "ensemble_weights": {
+    "full_input": {
+      "traits": 1.0,
+      "traditions": 0.5,
+      "save": 0.5,
+      "area": 0.25,
+      "damage_types": 1.0,
+      "sustained": 1.0
+    },
+    "only_rank_and_description": {
+      "traits": 1.0,
+      "traditions": 0.75,
+      "save": 0.5,
+      "area": 0.25,
+      "damage_types": 1.0,
+      "sustained": 1.0
+    }
+  }
+}

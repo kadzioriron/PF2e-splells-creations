@@ -1,0 +1,158 @@
+{
+  "without_naive_bayes": {
+    "traits": {
+      "micro_f1": 0.6719,
+      "macro_f1_all": 0.0881,
+      "macro_f1_present": 0.1003,
+      "precision": 0.8301,
+      "recall": 0.5644
+    },
+    "traditions": {
+      "micro_f1": 0.7389,
+      "macro_f1_all": 0.7282,
+      "macro_f1_present": 0.7282,
+      "precision": 0.6241,
+      "recall": 0.9056
+    },
+    "damage_types": {
+      "micro_f1": 0.1919,
+      "macro_f1_all": 0.1095,
+      "macro_f1_present": 0.1095,
+      "precision": 0.1397,
+      "recall": 0.3065
+    },
+    "sustained": {
+      "micro_f1": 0.5172,
+      "macro_f1_all": 0.5172,
+      "macro_f1_present": 0.5172,
+      "precision": 0.4545,
+      "recall": 0.6
+    },
+    "save": {
+      "accuracy": 0.8698,
+      "macro_f1": 0.8194
+    },
+    "area": {
+      "accuracy": 0.8125,
+      "macro_f1": 0.3625
+    },
+    "comparable_100_labels": {
+      "micro_f1": 0.6998,
+      "macro_f1_all": 0.1073,
+      "macro_f1_present": 0.1375,
+      "precision": 0.7455,
+      "recall": 0.6594
+    },
+    "comparable_without_rule_traits": {
+      "micro_f1": 0.6791,
+      "macro_f1_all": 0.0891,
+      "macro_f1_present": 0.1148,
+      "precision": 0.7267,
+      "recall": 0.6373
+    }
+  },
+  "with_naive_bayes": {
+    "traits": {
+      "micro_f1": 0.7392,
+      "macro_f1_all": 0.2235,
+      "macro_f1_present": 0.2543,
+      "precision": 0.8372,
+      "recall": 0.6617
+    },
+    "traditions": {
+      "micro_f1": 0.7486,
+      "macro_f1_all": 0.7352,
+      "macro_f1_present": 0.7352,
+      "precision": 0.6329,
+      "recall": 0.9161
+    },
+    "damage_types": {
+      "micro_f1": 0.2169,
+      "macro_f1_all": 0.1154,
+      "macro_f1_present": 0.1154,
+      "precision": 0.4286,
+      "recall": 0.1452
+    },
+    "sustained": {
+      "micro_f1": 0.5098,
+      "macro_f1_all": 0.5098,
+      "macro_f1_present": 0.5098,
+      "precision": 0.5,
+      "recall": 0.52
+    },
+    "save": {
+      "accuracy": 0.875,
+      "macro_f1": 0.8294
+    },
+    "area": {
+      "accuracy": 0.8229,
+      "macro_f1": 0.3481
+    },
+    "comparable_100_labels": {
+      "micro_f1": 0.7395,
+      "macro_f1_all": 0.1969,
+      "macro_f1_present": 0.2524,
+      "precision": 0.7589,
+      "recall": 0.7211
+    },
+    "comparable_without_rule_traits": {
+      "micro_f1": 0.7222,
+      "macro_f1_all": 0.1805,
+      "macro_f1_present": 0.2328,
+      "precision": 0.7424,
+      "recall": 0.7031
+    }
+  },
+  "only_rank_and_description": {
+    "traits": {
+      "micro_f1": 0.7342,
+      "macro_f1_all": 0.1673,
+      "macro_f1_present": 0.1904,
+      "precision": 0.8603,
+      "recall": 0.6403
+    },
+    "traditions": {
+      "micro_f1": 0.6203,
+      "macro_f1_all": 0.5993,
+      "macro_f1_present": 0.5993,
+      "precision": 0.5022,
+      "recall": 0.8112
+    },
+    "damage_types": {
+      "micro_f1": 0.2797,
+      "macro_f1_all": 0.1804,
+      "macro_f1_present": 0.1804,
+      "precision": 0.2469,
+      "recall": 0.3226
+    },
+    "sustained": {
+      "micro_f1": 0.4314,
+      "macro_f1_all": 0.4314,
+      "macro_f1_present": 0.4314,
+      "precision": 0.4231,
+      "recall": 0.44
+    },
+    "save": {
+      "accuracy": 0.849,
+      "macro_f1": 0.789
+    },
+    "area": {
+      "accuracy": 0.8333,
+      "macro_f1": 0.3434
+    },
+    "comparable_100_labels": {
+      "micro_f1": 0.6468,
+      "macro_f1_all": 0.1344,
+      "macro_f1_present": 0.1723,
+      "precision": 0.6791,
+      "recall": 0.6175
+    },
+    "comparable_without_rule_traits": {
+      "micro_f1": 0.6681,
+      "macro_f1_all": 0.1371,
+      "macro_f1_present": 0.1769,
+      "precision": 0.6791,
+      "recall": 0.6575
+    }
+  }
+}

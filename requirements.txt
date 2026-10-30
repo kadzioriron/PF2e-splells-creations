@@ -2,4 +2,7 @@ ipykernel
 joblib
 numpy
 pandas
+scikit-learn
+scipy
+sentence-transformers
 torch
