@@ -1,0 +1,23 @@
+name: Deploy to Hugging Face
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "huggingface/**"
+      - "iterations/iteration_2/artifacts/**"
+      - "iterations/iteration_3/artifacts/**"
+  workflow_dispatch:  # "Run workflow" button in the Actions tab
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install huggingface_hub
+      - run: python huggingface/deploy.py
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}

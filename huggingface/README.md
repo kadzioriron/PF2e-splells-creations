@@ -5,6 +5,7 @@ colorFrom: purple
 colorTo: indigo
 sdk: docker
 app_port: 8501
+suggested_hardware: cpu-basic
 pinned: false
 ---
 
@@ -20,19 +21,18 @@ Models (trained on rank + description only): iteration 2 (NB-LR) and iteration 3
 |---|---|
 | `app.py` | Streamlit front: input, editor, Foundry JSON import/export |
 | `predictor.py` | loads the models from the model repo and predicts |
-| `deploy.py` | uploads the models and this folder to Hugging Face |
+| `deploy.py` | uploads the models and this folder to Hugging Face, sets the Space to the free CPU |
 | `Dockerfile`, `requirements.txt` | how the Space is built |
+| `../.github/workflows/deploy-space.yml` | runs `deploy.py` on every push to GitHub |
 
-## Deploy (3 steps)
+## Deploy through GitHub (one-time setup)
 
-1. **Token:** <https://huggingface.co/settings/tokens> → *Create new token* → type **Write**. Keep it out of the code.
-2. **Upload** (from the project folder, with the notebooks of iterations 2 and 3 already run):
-   ```bash
-   pip install huggingface_hub
-   HF_TOKEN=hf_xxx python huggingface/deploy.py
-   ```
-   This puts `model.joblib`, `network.pt`, `ensemble.joblib` in the model repo and this folder in the Space. The Space then builds by itself (~5 min).
-3. **Only if the model repo is private:** Space → *Settings* → *Variables and secrets* → *New secret* `HF_TOKEN` = a **Read** token.
+1. **Hugging Face token:** <https://huggingface.co/settings/tokens> → *Create new token* → type **Write**.
+2. **Put it in GitHub:** repo → *Settings* → *Secrets and variables* → *Actions* → *New repository secret*, name `HF_TOKEN`, value = the token.
+3. **Push to `main`** (with `iterations/iteration_2/artifacts` and `iterations/iteration_3/artifacts` committed). The *Actions* tab shows the deploy; it can also be started there with *Run workflow*. The Space then builds by itself (~5 min).
+4. **Only if the model repo is private:** Space → *Settings* → *Variables and secrets* → *New secret* `HF_TOKEN` = a **Read** token.
+
+After that every push that changes `huggingface/` or the model files deploys again. By hand it also works: `HF_TOKEN=hf_xxx python huggingface/deploy.py`.
 
 Optional variable: `MODEL_REPO` (another model repo).
 
