@@ -3,9 +3,11 @@ title: PF2e Spell Tagger
 emoji: 🔮
 colorFrom: purple
 colorTo: indigo
-sdk: docker
-app_port: 8501
-suggested_hardware: cpu-basic
+sdk: gradio
+sdk_version: 6.31.0
+app_file: app.py
+python_version: "3.12"
+short_description: Homebrew PF2e spell → Foundry VTT JSON
 pinned: false
 ---
 
@@ -19,11 +21,13 @@ Models (trained on rank + description only): iteration 2 (NB-LR) and iteration 3
 
 | File | What it does |
 |---|---|
-| `app.py` | Streamlit front: input, editor, Foundry JSON import/export |
+| `app.py` | Gradio front: input, editor, import/export |
+| `foundry.py` | Foundry spell JSON: build, read, folder ids |
 | `predictor.py` | loads the models from the model repo and predicts |
-| `deploy.py` | uploads the models and this folder to Hugging Face, sets the Space to the free CPU |
-| `Dockerfile`, `requirements.txt` | how the Space is built |
+| `deploy.py` | uploads the models and this folder to Hugging Face |
 | `../.github/workflows/deploy-space.yml` | runs `deploy.py` on every push to GitHub |
+
+The Space runs on **ZeroGPU** (the only free hardware for Gradio). The models are small and run on the CPU, so no GPU quota is used.
 
 ## Deploy through GitHub (one-time setup)
 
@@ -34,13 +38,11 @@ Models (trained on rank + description only): iteration 2 (NB-LR) and iteration 3
 
 After that every push that changes `huggingface/` or the model files deploys again. By hand it also works: `HF_TOKEN=hf_xxx python huggingface/deploy.py`.
 
-Optional variable: `MODEL_REPO` (another model repo).
-
 ## Run locally
 
 ```bash
-pip install -r huggingface/requirements.txt
-cd huggingface && streamlit run app.py
+pip install gradio spaces -r huggingface/requirements.txt
+cd huggingface && python app.py
 ```
 
 Without internet access to the model repo, put the 3 model files in `huggingface/models/`.

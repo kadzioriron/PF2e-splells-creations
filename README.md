@@ -73,7 +73,7 @@ iterations/
   iteration_2/           iteration_2.ipynb + artifacts/   (final model)
   iteration_3/           iteration_3.ipynb + artifacts/   (made with AI)
 documents/               proposal, design document, diagram
-huggingface/             Streamlit app for the Hugging Face Space (iterations 2 and 3), see huggingface/README.md
+huggingface/             Gradio app for the Hugging Face Space (iterations 2 and 3), see huggingface/README.md
 ```
 
 ## How to run

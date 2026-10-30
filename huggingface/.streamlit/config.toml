@@ -1,8 +1,0 @@
-[server]
-headless = true
-fileWatcherType = "none"       # otherwise Streamlit scans transformers and logs torchvision errors
-enableXsrfProtection = false   # otherwise the JSON upload fails inside the Hugging Face iframe
-
-[theme]
-base = "dark"
-primaryColor = "#e8553f"
